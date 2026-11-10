@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "npm test --workspaces --if-present",
+    "dev": "node scripts/dev-all.mjs",
+    "sample-video": "npm run sample-video -w @indus/marketing-bot"
+  },
+  "workspaces": [
+    "indus-bot-core",
+    "indus-ops",
+    "indus-scheduler-bot",
+    "indus-commander-bot",
+    "indus-monitor-bot",
+    "indus-seo-bot",
+    "indus-mailforge-bot",
+    "indus-inquiries-bot",
+    "indus-leads-bot",
+    "indus-reports-bot",
+    "indus-marketing-bot",
+    "indus-security-bot",
+    "indus-backup-bot",
+    "indus-devops-bot",
+    "indus-content-bot",
+    "indus-translator-bot",
+    "indus-crm-bot",
+    "indus-invoice-bot",
+    "indus-support-bot",
+    "indus-competitor-bot",
+    "indus-analytics-bot"
+  ],
+  "devDependencies": {
+    "playwright-core": "^1.49.0"
+  }
+}

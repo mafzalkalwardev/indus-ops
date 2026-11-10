@@ -1,0 +1,19 @@
+1
+00:00:01,399 --> 00:00:05,036
+MailForge keeps list checks and campaigns on your
+
+2
+00:00:05,036 --> 00:00:08,672
+own server. You upload a list, verify it,
+
+3
+00:00:08,672 --> 00:00:12,309
+and send only to addresses that passed. Replies
+
+4
+00:00:12,309 --> 00:00:15,945
+land in one inbox. The data stays with
+
+5
+00:00:15,945 --> 00:00:17,545
+you.

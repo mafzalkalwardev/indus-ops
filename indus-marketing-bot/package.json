@@ -1,0 +1,19 @@
+{
+  "name": "@indus/marketing-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "test": "vitest run",
+    "sample-video": "tsx src/sample.ts"
+  },
+  "dependencies": {
+    "@indus/bot-core": "file:../indus-bot-core"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1"
+  }
+}
