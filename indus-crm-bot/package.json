@@ -2,6 +2,8 @@
   "name": "@indus/crm-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Keeps a local pipeline of new, qualified, proposal, won, and lost clients, fed by Inquiries and Leads. Quote drafts are not sent.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

@@ -2,6 +2,8 @@
   "name": "@indus/content-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Drafts long-form articles in English, Spanish, French, Urdu, Punjabi, Sindhi, and Haitian Creole. Each article waits for approval before it is published.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

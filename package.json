@@ -30,5 +30,7 @@
   ],
   "devDependencies": {
     "playwright-core": "^1.49.0"
-  }
+  },
+  "description": "Self-hosted operations fleet for INDUS Web Agency. One hub, a local model, and a bot per job, with approval before anything public.",
+  "license": "MIT"
 }

@@ -2,6 +2,8 @@
   "name": "@indus/security-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Audits SSH, firewall status, unexpected listeners, failed logins, and pending security upgrades. Only two fixes can be applied, and only after approval.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

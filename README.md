@@ -1,6 +1,10 @@
 # INDUS Ops
 
-A self-hosted fleet for [INDUS Web Agency](https://induswebagency.com). One hub, one scheduler, one commander, and a bot per job. Everything binds to `127.0.0.1`. The only public site is `https://ops.induswebagency.com`, which nginx proxies to the hub.
+![INDUS Ops social card: one login, a local model, a bot per job, approval before anything public](docs/social-preview.png)
+
+INDUS Ops is the self-hosted operations fleet for [INDUS Web Agency](https://induswebagency.com). One hub, one scheduler, one commander, and a bot per job. Everything binds to `127.0.0.1`. The only public site is [ops.induswebagency.com](https://ops.induswebagency.com), which nginx proxies to the hub. Mail, campaigns, social posts, deploys, security fixes, and live restores wait in the approval inbox.
+
+![INDUS Ops hub overview, with every bot online and approvals waiting](docs/screenshots/hub-overview.png)
 
 The local model is Ollama on CPU. Default model: `qwen2.5:3b` (Q4). Change `LLM_MODEL` if you want `llama3.2:3b` or a smaller `qwen2.5:1.5b`. No paid API is required. A free OpenAI-compatible server can be swapped in later with `INDUS_LLM_PROVIDER=openai-compatible`.
 
@@ -10,29 +14,35 @@ Bots share one LLM lock, so inference never overlaps video renders. Idle bots ar
 
 | Folder | Port | Role |
 | --- | --- | --- |
-| indus-ops | 41731 | Login, overview, approval inbox, reverse proxy |
-| indus-scheduler-bot | 41748 | Cron, intervals, one-offs, retries, pause-all |
-| indus-commander-bot | 41749 | Morning plan. Cannot send, post, or deploy |
-| indus-monitor-bot | 41741 | Uptime, TLS, host health |
-| indus-seo-bot | 41742 | Sitemaps, metadata, IndexNow, drafts |
-| indus-mailforge-bot | 41743 | MailForge stats and campaign drafts |
-| indus-inquiries-bot | 41744 | IMAP and contact form. Sends only after approval |
-| indus-leads-bot | 41745 | Public job leads and proposal drafts |
-| indus-reports-bot | 41746 | Daily digest |
-| indus-marketing-bot | 41747 | LinkedIn drafts, local video, organic plan |
-| indus-security-bot | 41751 | VPS audit, allowlisted fixes after approval |
-| indus-backup-bot | 41752 | Backups, checksums, restore drills |
-| indus-devops-bot | 41753 | GitHub triage, allowlisted redeploy after approval |
-| indus-content-bot | 41754 | Articles in the agency languages |
-| indus-translator-bot | 41755 | hreflang pages, written only after approval |
-| indus-crm-bot | 41756 | Pipeline and quote drafts |
-| indus-invoice-bot | 41757 | PDF quotes and invoices. No payments |
-| indus-support-bot | 41758 | Product chat widget, escalates to Inquiries |
-| indus-competitor-bot | 41759 | robots.txt-respecting page watch |
-| indus-analytics-bot | 41760 | First-party beacon. No raw IPs |
-| indus-bot-core | — | Shared SDK |
+| [indus-ops](indus-ops/) | 41731 | Login, overview, approval inbox, reverse proxy |
+| [indus-scheduler-bot](https://github.com/mafzalkalwardev/indus-scheduler-bot) | 41748 | Cron, intervals, one-offs, retries, pause-all |
+| [indus-commander-bot](https://github.com/mafzalkalwardev/indus-commander-bot) | 41749 | Morning plan. Cannot send, post, or deploy |
+| [indus-monitor-bot](https://github.com/mafzalkalwardev/indus-monitor-bot) | 41741 | Uptime, TLS, host health |
+| [indus-seo-bot](https://github.com/mafzalkalwardev/indus-seo-bot) | 41742 | Sitemaps, metadata, IndexNow, drafts |
+| [indus-mailforge-bot](https://github.com/mafzalkalwardev/indus-mailforge-bot) | 41743 | MailForge stats and campaign drafts |
+| [indus-inquiries-bot](https://github.com/mafzalkalwardev/indus-inquiries-bot) | 41744 | IMAP and contact form. Sends only after approval |
+| [indus-leads-bot](https://github.com/mafzalkalwardev/indus-leads-bot) | 41745 | Public job leads and proposal drafts |
+| [indus-reports-bot](https://github.com/mafzalkalwardev/indus-reports-bot) | 41746 | Daily digest |
+| [indus-marketing-bot](https://github.com/mafzalkalwardev/indus-marketing-bot) | 41747 | LinkedIn drafts, local video, organic plan |
+| [indus-security-bot](https://github.com/mafzalkalwardev/indus-security-bot) | 41751 | VPS audit, allowlisted fixes after approval |
+| [indus-backup-bot](https://github.com/mafzalkalwardev/indus-backup-bot) | 41752 | Backups, checksums, restore drills |
+| [indus-devops-bot](https://github.com/mafzalkalwardev/indus-devops-bot) | 41753 | GitHub triage, allowlisted redeploy after approval |
+| [indus-content-bot](https://github.com/mafzalkalwardev/indus-content-bot) | 41754 | Articles in the agency languages |
+| [indus-translator-bot](https://github.com/mafzalkalwardev/indus-translator-bot) | 41755 | hreflang pages, written only after approval |
+| [indus-crm-bot](https://github.com/mafzalkalwardev/indus-crm-bot) | 41756 | Pipeline and quote drafts |
+| [indus-invoice-bot](https://github.com/mafzalkalwardev/indus-invoice-bot) | 41757 | PDF quotes and invoices. No payments |
+| [indus-support-bot](https://github.com/mafzalkalwardev/indus-support-bot) | 41758 | Product chat widget, escalates to Inquiries |
+| [indus-competitor-bot](https://github.com/mafzalkalwardev/indus-competitor-bot) | 41759 | robots.txt-respecting page watch |
+| [indus-analytics-bot](https://github.com/mafzalkalwardev/indus-analytics-bot) | 41760 | First-party beacon. No raw IPs |
+| [indus-bot-core](https://github.com/mafzalkalwardev/indus-bot-core) | — | Shared SDK |
 
-Each folder is meant to be its own private GitHub repo under `mafzalkalwardev`. See the report in the latest commit message, or below, for push status.
+Each bot folder is also published as its own repository under [mafzalkalwardev](https://github.com/mafzalkalwardev). Install and deploy stay in this monorepo. Suggested GitHub topics and the About description for every repository are in [docs/github-about.json](docs/github-about.json).
+
+## Pictures
+
+![Approval inbox in the INDUS Ops hub](docs/screenshots/hub-inbox.png)
+
+![INDUS Ops hub on a narrow screen](docs/screenshots/hub-mobile.png)
 
 ## Local
 
@@ -85,6 +95,10 @@ sudo bash deploy/backup.sh
 ```
 
 Treat `/opt/indus/backups` as secret. Keep 14 days, then copy the directory off the box.
+
+## License
+
+[MIT](LICENSE). Copyright (c) 2026 Muhammad Afzal Kalwar.
 
 ## Approval rule
 

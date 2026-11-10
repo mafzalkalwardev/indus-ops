@@ -2,6 +2,8 @@
   "name": "@indus/mailforge-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Reads local MailForge stats, cleans mailing lists, and drafts campaigns. A campaign is scheduled only after approval and only with a future send time.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

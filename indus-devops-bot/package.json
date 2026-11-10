@@ -2,6 +2,8 @@
   "name": "@indus/devops-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Lists recent GitHub repositories for triage and redeploys one allowlisted app with git pull --ff-only and systemctl restart, only after approval.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

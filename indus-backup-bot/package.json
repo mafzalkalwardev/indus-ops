@@ -2,6 +2,8 @@
   "name": "@indus/backup-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Copies the paths you list, writes sha256 checksums, prunes old copies, and runs a restore drill. A live restore still waits for approval.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

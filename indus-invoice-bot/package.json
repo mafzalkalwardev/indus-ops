@@ -2,6 +2,8 @@
   "name": "@indus/invoice-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Records quotes and invoices and builds a one-page PDF. There is no payment processor. You mark a document paid by hand.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

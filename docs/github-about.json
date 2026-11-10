@@ -1,0 +1,310 @@
+{
+  "indus-ops": {
+    "description": "Self-hosted agency operations fleet for INDUS Web Agency. One login hub, local Ollama, and a bot per job. Mail, posts, deploys, and fixes wait for approval.",
+    "homepage": "https://ops.induswebagency.com",
+    "topics": [
+      "indus-ops",
+      "self-hosted",
+      "agency",
+      "nodejs",
+      "typescript",
+      "ollama",
+      "sqlite",
+      "nginx",
+      "systemd",
+      "approvals",
+      "dashboard",
+      "automation",
+      "llm"
+    ]
+  },
+  "indus-bot-core": {
+    "description": "Shared TypeScript SDK for INDUS bots: a single local LLM lock, approval records, SSO, SQLite, and the service shell every bot runs.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "indus",
+      "sdk",
+      "typescript",
+      "nodejs",
+      "sqlite",
+      "ollama",
+      "llm",
+      "sso",
+      "approvals",
+      "express"
+    ]
+  },
+  "indus-monitor-bot": {
+    "description": "Uptime, TLS certificate expiry, disk, memory, and allowlisted systemd restarts for the INDUS Ops VPS. Failed units wait for approval unless you opted in.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "uptime-monitoring",
+      "tls",
+      "systemd",
+      "self-hosted",
+      "nodejs",
+      "typescript",
+      "observability",
+      "vps",
+      "indus"
+    ]
+  },
+  "indus-seo-bot": {
+    "description": "On-page SEO audits, sitemap change detection, IndexNow pings, and blog drafts for INDUS sites. Drafts wait in the approval inbox.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "seo",
+      "indexnow",
+      "sitemap",
+      "metadata",
+      "json-ld",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-mailforge-bot": {
+    "description": "Reads local MailForge stats, cleans mailing lists, and drafts campaigns. A campaign is scheduled only after approval and only with a future send time.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "email",
+      "mailforge",
+      "campaigns",
+      "list-hygiene",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-inquiries-bot": {
+    "description": "Collects IMAP mail and contact-form posts, classifies them, and drafts replies. SMTP sends only after you approve the draft.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "imap",
+      "contact-form",
+      "email",
+      "crm",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "smtp",
+      "indus"
+    ]
+  },
+  "indus-leads-bot": {
+    "description": "Collects public software-job listings from Remotive and We Work Remotely, scores them, and drafts proposals. Nothing is submitted to a marketplace.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "leads",
+      "freelance",
+      "proposals",
+      "rss",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-reports-bot": {
+    "description": "Writes a daily markdown digest of every INDUS bot: status, last summary, and how many approvals are waiting. Email goes out only when you enable it.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "digest",
+      "reporting",
+      "operations",
+      "email",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-marketing-bot": {
+    "description": "Drafts LinkedIn posts, a local product reel, and an organic pack for X, Facebook, and Reddit. Publishing waits for approval, and Reddit is never auto-posted.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "linkedin",
+      "organic-social",
+      "video",
+      "marketing",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "utm",
+      "indus"
+    ]
+  },
+  "indus-scheduler-bot": {
+    "description": "The only clock in INDUS Ops. Runs cron jobs, intervals, and one-offs, retries with backoff, and can pause every bot.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "scheduler",
+      "cron",
+      "job-queue",
+      "systemd",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-commander-bot": {
+    "description": "Writes the INDUS morning plan from your goals and queues safe internal tasks. It cannot publish, send, deploy, restore, or apply a fix.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "planner",
+      "operations",
+      "llm",
+      "automation",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-security-bot": {
+    "description": "Audits SSH, firewall status, unexpected listeners, failed logins, and pending security upgrades. Only two fixes can be applied, and only after approval.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "vps",
+      "security-audit",
+      "ssh",
+      "nginx",
+      "fail2ban",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-backup-bot": {
+    "description": "Copies the paths you list, writes sha256 checksums, prunes old copies, and runs a restore drill. A live restore still waits for approval.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "backup",
+      "checksums",
+      "restore",
+      "sqlite",
+      "mongodb",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-devops-bot": {
+    "description": "Lists recent GitHub repositories for triage and redeploys one allowlisted app with git pull --ff-only and systemctl restart, only after approval.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "github",
+      "deploy",
+      "systemd",
+      "git",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "devops",
+      "indus"
+    ]
+  },
+  "indus-content-bot": {
+    "description": "Drafts long-form articles in English, Spanish, French, Urdu, Punjabi, Sindhi, and Haitian Creole. Each article waits for approval before it is published.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "content",
+      "seo",
+      "multilingual",
+      "writing",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-translator-bot": {
+    "description": "Drafts localized pages with hreflang alternates for the INDUS agency languages. The HTML file is written to disk only after you approve it.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "i18n",
+      "hreflang",
+      "translation",
+      "seo",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-crm-bot": {
+    "description": "Keeps a local pipeline of new, qualified, proposal, won, and lost clients, fed by Inquiries and Leads. Quote drafts are not sent.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "crm",
+      "pipeline",
+      "quotes",
+      "sales",
+      "nodejs",
+      "typescript",
+      "sqlite",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-invoice-bot": {
+    "description": "Records quotes and invoices and builds a one-page PDF. There is no payment processor. You mark a document paid by hand.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "invoicing",
+      "pdf",
+      "quotes",
+      "billing",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-support-bot": {
+    "description": "Product chat widget for INDUS sites. Answers from the docs you configure, refuses invented prices, and escalates to Inquiries instead of sending email.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "customer-support",
+      "chat-widget",
+      "docs",
+      "llm",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-competitor-bot": {
+    "description": "Watches public competitor pages, honors robots.txt, and summarizes what changed. It does not bypass disallows or invent prices it did not read.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "competitor-monitoring",
+      "robots-txt",
+      "changelog",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  },
+  "indus-analytics-bot": {
+    "description": "First-party page analytics for INDUS sites. Stores a path, referrer, and a daily salted visitor hash. Raw IP addresses are not kept.",
+    "homepage": "https://github.com/mafzalkalwardev/indus-ops",
+    "topics": [
+      "analytics",
+      "privacy",
+      "first-party",
+      "beacon",
+      "nodejs",
+      "typescript",
+      "self-hosted",
+      "indus"
+    ]
+  }
+}

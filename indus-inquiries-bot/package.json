@@ -2,6 +2,8 @@
   "name": "@indus/inquiries-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Collects IMAP mail and contact-form posts, classifies them, and drafts replies. SMTP sends only after you approve the draft.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",
