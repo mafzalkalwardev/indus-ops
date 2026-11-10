@@ -2,6 +2,8 @@
   "name": "@indus/leads-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Collects public software-job listings from Remotive and We Work Remotely, scores them, and drafts proposals. Nothing is submitted to a marketplace.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

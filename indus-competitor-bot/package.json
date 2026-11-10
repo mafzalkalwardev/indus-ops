@@ -2,6 +2,8 @@
   "name": "@indus/competitor-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Watches public competitor pages, honors robots.txt, and summarizes what changed. It does not bypass disallows or invent prices it did not read.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

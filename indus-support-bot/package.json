@@ -2,6 +2,8 @@
   "name": "@indus/support-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Product chat widget for INDUS sites. Answers from the docs you configure, refuses invented prices, and escalates to Inquiries instead of sending email.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

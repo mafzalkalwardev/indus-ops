@@ -2,6 +2,8 @@
   "name": "@indus/ops",
   "version": "1.0.0",
   "private": true,
+  "description": "Self-hosted login hub for the INDUS Ops fleet. One inbox for approvals, a fleet overview, and the reverse proxy in front of every bot.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

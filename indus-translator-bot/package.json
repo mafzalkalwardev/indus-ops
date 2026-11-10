@@ -2,6 +2,8 @@
   "name": "@indus/translator-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Drafts localized pages with hreflang alternates for the INDUS agency languages. The HTML file is written to disk only after you approve it.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

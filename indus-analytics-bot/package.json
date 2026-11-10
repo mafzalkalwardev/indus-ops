@@ -2,6 +2,8 @@
   "name": "@indus/analytics-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "First-party page analytics for INDUS sites. Stores a path, referrer, and a daily salted visitor hash. Raw IP addresses are not kept.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

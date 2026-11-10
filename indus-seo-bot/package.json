@@ -2,6 +2,8 @@
   "name": "@indus/seo-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "On-page SEO audits, sitemap change detection, IndexNow pings, and blog drafts for INDUS sites. Drafts wait in the approval inbox.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",

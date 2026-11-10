@@ -2,6 +2,8 @@
   "name": "@indus/monitor-bot",
   "version": "1.0.0",
   "private": true,
+  "description": "Uptime, TLS certificate expiry, disk, memory, and allowlisted systemd restarts for the INDUS Ops VPS. Failed units wait for approval unless you opted in.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",
